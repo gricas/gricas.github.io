@@ -119,14 +119,14 @@
     }
   ],
   "styling": {
-    "theme": "nature",
-    "primary_color": "#059669",
-    "secondary_color": "#047857",
-    "accent_color": "#10b981",
-    "text_color": "#1f2937",
-    "text_light": "#374151",
-    "background_color": "#f0fdf4",
-    "header_gradient": "linear-gradient(135deg, #059669 0%, #047857 100%)",
+    "theme": "dark",
+    "primary_color": "#3b82f6",
+    "secondary_color": "#1e40af",
+    "accent_color": "#60a5fa",
+    "text_color": "#f9fafb",
+    "text_light": "#d1d5db",
+    "background_color": "#111827",
+    "header_gradient": "linear-gradient(135deg, #1e40af 0%, #3b82f6 100%)",
     "font_family": "Source Sans Pro",
     "accent_font": "Oswald"
   },
