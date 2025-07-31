@@ -1,0 +1,162 @@
+{
+  "personal": {
+    "name": "Grigore Casim",
+    "title": "Site Reliability Engineer",
+    "email": "grigorecasim@gmail.com",
+    "phone": "+1 (224) 493-0243 ",
+    "location": "Chicago, IL",
+    "linkedin": "https://www.linkedin.com/in/grigore-c-9205631bb/",
+    "github": "https://github.com/gricas",
+    "website": "https://gricascloud.com/"
+  },
+  "summary": "Site Reliability Engineer with 8+ years of experience designing microservices, managing cloud infrastructure, and leading incident response. Skilled in ITSM, automation, CI/CD, and Infrastructure as Code. Strong problem solver with a passion for scalable solutions and mentoring.",
+  "skills": {
+    "programming_languages": [
+      "JavaScript",
+      "Python",
+      "Go",
+      "Java",
+      "TypeScript"
+    ],
+    "frameworks_tools": [
+      "Ansible",
+      "AWS/GCP",
+      "Kubernetes/RKE/EKS",
+      "PostgreSQL",
+      "React",
+      "Node.js",
+      "Spring Boot"
+    ],
+    "soft_skills": [
+      "Team Leadership",
+      "Agile Development",
+      "Technical Writing",
+      "Problem Solving"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Senior Site Reliability Engineer",
+      "company": "Collabera Inc | Bank of America",
+      "start_date": "January 2025",
+      "end_date": "Present",
+      "achievements": [
+        "Oversaw enterprise incident lifecycle in a regulated financial environment, sustaining 99.9% SLA compliance across 100+ OpenShift clusters and 2,000+ UNIX systems.",
+        "Conducted vulnerability assessments and coordinated remediation, closing 1,200+ findings in six months and reducing security exposure by 40%.",
+        "Architected automated incident response workflows with ServiceNow ITSM, decreasing MTTR from 4 hours to 90 minutes and saving ~1,000 engineering hours annually.",
+        "Supported mission-critical trading and banking applications processing $50M+ daily transactions with zero missed cutoffs during tenure.",
+        "Collaborated with Security, Network, and Development teams, contributing to 3 successful SOX audits with no major findings."
+      ]
+    },
+    {
+      "title": "Senior Site Reliability Engineer",
+      "company": "TEKsystems | Startup AI Infrastructure Solutions",
+      "start_date": "December 2023",
+      "end_date": "December 2024",
+      "achievements": [
+        "Led Site Reliability Engineering for the Observability platform, managing Mimir and OpenTelemetry API endpoints to ensure scalable metrics ingestion and reliable time-series storage supporting millions of active series.",
+        "Automated multi-region AWS deployments with Harness.io and Terraform, cutting provisioning times from 4 hours to 30 minutes.",
+        "Deployed GPU compute automation with Ansible for CUDA drivers and Slurm scheduling, reducing GPU job queue times by 60%.",
+        "Implemented SAST/DAST  in GitLab pipelines, detecting 300+ vulnerable dependencies and reducing remediation time from 3 weeks to 5 days.",
+        "Optimized Kubernetes workloads, lowering AWS spend by 25% (~$750K annually) while maintaining SLAs.",
+        "Facilitated knowledge sharing and cross-functional collaboration through documentation, training sessions, and participation in internal communities of practice, fostering a culture of learning and innovation within the organization"
+      ]
+    },
+    {
+        "title": "Senior Systems Engineer",
+        "company": "TEKsystems | Disney Parks & Resorts",
+        "start_date": "July 2022",
+        "end_date": "December 2023",
+        "achievements": [
+          "Engineered AWS infrastructure with ECS Fargate, API Gateway, and Lambda to serve 40,000+ daily park visitors with 99.99% uptime.",
+          "Standardized Terraform modules for multi-region workloads, cutting provisioning time by 50% and enabling 60+ applications to migrate to IAC.",
+          "Managed SNS/SQS and RabbitMQ systems processing 50M+ messages daily with 99.99% delivery reliability.",
+          "Coordinated cost optimization initiatives, reducing cloud spend by 20% (~$2.5M annually) while maintaining PCI compliance.",
+          "Directed incident management across global teams, reducing average resolution time by 35%, and mentored 8 engineers in incident postmortem practices."
+        ]
+    },
+    {
+        "title": "Jr. DevOps/SRE Engineer",
+        "company": "Evercast LLC",
+        "start_date": "April 2021",
+        "end_date": "July 2022",
+        "achievements": [
+          "Designed AWS infrastructure with Terraform to support 24/7 real-time streaming sessions for 10K+ users.",
+          "Optimized EKS deployments, cutting production rollout times from 30 to 12 minutes and increasing release frequency by 3x",
+          "Implemented Grafana/Prometheus stack with automated alerting, reducing mean time to detection (MTTD) by 70%.",
+          "Applied Cloud Custodian policies, achieving $120K annual cost savings through automated resource lifecycle management.",
+          "Restructured IAM policies, eliminating 95% of overly-permissive roles and improving audit compliance."
+        ]
+    },
+    {
+        "title": "AWS Cloud Engineer",
+        "company": "Ukietech Inc",
+        "start_date": "January 2017",
+        "end_date": "March 2021",
+        "achievements": [
+          "Designed and documented multi-tier managed services in AWS, supporting 50+ business applications and 100K+ monthly users.",
+          "Deployed Terraform-based infrastructure patterns, reducing environment setup from 2 weeks to 2 days.",
+          "Implemented SCA tooling in Jenkins pipelines, flagging 250+ open-source vulnerabilities and reducing remediation from 2 months to 10 days.",
+          "Supported enterprise documentation in Confluence and Jira, creating 100+ knowledge base articles for cross-team use."
+        ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology and Management in Public Administration",
+      "institution": "University of Technology of Moldova",
+      "graduation_year": "2014"
+    },
+    {
+        "degree": "AWS Solutions Architect Associate 9YX1DXDDCEFEQMC9",
+        "institution": "AWS Training",
+        "graduation_year": "2020"
+    },
+    {
+        "degree": "AWS Cloud Engineering",
+        "institution": "Ziyotek Institute of Technology",
+        "graduation_year": "2020"
+      }    
+  ],
+  "projects": [
+      {
+        "name": "Monitoring & Observability Solution",
+        "description": "Architected comprehensive monitoring stack using Prometheus, Grafana, and Mimir. Established alerting mechanisms and dashboards that reduced mean time to resolution (MTTR) by 60% and improved system reliability across 50+ microservices.",
+        "link": "",
+        "technologies": ["Prometheus", "Grafana", "Mimir", "Loki", "AlertManager", "Python", "Kubernetes", "Rancher", "Terraform"]
+    },
+    {
+      "name": "Enterprise Infrastructure Modernization",
+      "description": "Led cross-functional team in migrating legacy on-premises infrastructure to AWS cloud, resulting in 40% cost reduction and 99.9% uptime. Implemented Infrastructure as Code using Terraform and Ansible, enabling rapid deployment and disaster recovery capabilities.",
+      "link": "",
+      "technologies": ["AWS", "Terraform", "Ansible", "Kubernetes", "CI/CD"]
+    },
+    {
+        "name": "Cloud Cost Optimization",
+        "description": "Led initiative to optimize cloud spending, implementing auto-scaling, resource tagging, and cost monitoring. Achieved 35% reduction in monthly cloud costs while maintaining performance.",
+        "technologies": ["AWS Cost Management", "Auto-scaling", "Monitoring", "Terraform", "Cloud Custodian"]
+    },
+    {
+      "name": "Personal Website",
+      "description": "Developed a personal website using HTML, CSS, and JavaScript to showcase my skills and projects. The website is hosted AWS S3 and CloudFront. Integrated with K3s and Raspberry Pi. https://www.gricascloud.com",
+      "technologies": ["HTML", "CSS", "JavaScript", "GitHub Pages", "K3s", "Raspberry Pi"]
+  }
+  ],
+  "styling": {
+    "theme": "dark",
+    "primary_color": "#3b82f6",
+    "secondary_color": "#1e40af",
+    "accent_color": "#60a5fa",
+    "text_color": "#f9fafb",
+    "text_light": "#d1d5db",
+    "background_color": "#111827",
+    "header_gradient": "linear-gradient(135deg, #1e40af 0%, #3b82f6 100%)",
+    "font_family": "Source Sans Pro",
+    "accent_font": "Oswald"
+  },
+  "meta": {
+    "description": "Professional resume and portfolio",
+    "keywords": "software engineer, full-stack developer, web development, site reliability engineer, ITSM, automation, CI/CD, infrastructure as code, microservices, cloud infrastructure, enterprise incident management, vulnerability management, customer issue resolution, global financial environments, DevOps culture, Continuous Integration (CI) & Continuous Deployment/Delivery (CD) using Infrastructure as Code technologies, organizing workflows, solving complex problems, making accurate decisions based on sound judgement and analytical strengths, top performer driving Automation, Digital Transformation, Application Migration, and Security Risk Management projects, excellent understanding of all phases of Enterprise SDLC and ITSM frameworks",
+    "author": "Grigore Casim"
+  }
+} 

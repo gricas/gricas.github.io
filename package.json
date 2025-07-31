@@ -1,0 +1,27 @@
+{
+  "name": "resume-website",
+  "version": "1.0.0",
+  "description": "A parameterized resume website with multiple themes",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "sync": "node sync-config.js",
+    "dev": "python -m http.server 8000",
+    "watch": "nodemon --watch config.json --exec 'node build.js'",
+    "preview": "npm run build && npm run dev"
+  },
+  "keywords": [
+    "resume",
+    "portfolio",
+    "github-pages",
+    "static-site"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
