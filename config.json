@@ -1,0 +1,133 @@
+{
+  "personal": {
+    "name": "Grigore Casim",
+    "title": "Site Reliability Engineer",
+    "email": "grigorecasim@gmail.com",
+    "phone": "+1 (224) 493-0243 ",
+    "location": "Chicago, IL",
+    "linkedin": "https://www.linkedin.com/in/grigore-c-9205631bb/",
+    "github": "https://github.com/gricas",
+    "website": "https://gricas.github.io/"
+  },
+  "summary": "Site Reliability Engineer with 5+ years of experience designing microservices, managing cloud infrastructure, and leading incident response. Skilled in ITSM, automation, CI/CD, and Infrastructure as Code. Strong problem solver with a passion for scalable solutions and mentoring.",
+  "skills": {
+    "programming_languages": [
+      "JavaScript",
+      "Python",
+      "Go",
+      "Java",
+      "TypeScript"
+    ],
+    "frameworks_tools": [
+      "Ansible",
+      "AWS/GCP",
+      "Kubernetes/RKE/EKS",
+      "PostgreSQL",
+      "React",
+      "Node.js",
+      "Spring Boot"
+    ],
+    "soft_skills": [
+      "Team Leadership",
+      "Agile Development",
+      "Technical Writing",
+      "Problem Solving"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Senior Site Reliability Engineer",
+      "company": "Collabera Inc | Bank of America",
+      "start_date": "January 2025",
+      "end_date": "Present",
+      "achievements": [
+        "Resolve critical customer-side issues through comprehensive ITSM processes, maintaining SLA compliance and ensuring minimal business impact for financial services operations",
+        "Manage incident lifecycle from initial report through resolution, utilizing ServiceNow and enterprise ticketing systems to track, escalate, and document incidents effectively",
+        "Conduct vulnerability management assessments, identifying, prioritizing, and coordinating remediation efforts for security risks across enterprise infrastructure OpenShift, UNIX virtual machines"
+      ]
+    },
+    {
+      "title": "Senior Site Reliability Engineer",
+      "company": "TEKsystems | Startup AI Infrastructure Solutions",
+      "start_date": "December 2023",
+      "end_date": "December 2024",
+      "achievements": [
+        "Developed automated infrastructure solutions with Ansible and Terraform for both on-premises data centers and AWS environments.",
+        "Provisioned and supported Rancher Kubernetes and EKS for modernization, application portability, resiliency and accelerated disaster recovery.",
+        "Facilitated knowledge sharing and cross-functional collaboration through documentation, training sessions, and participation in internal communities of practice, fostering a culture of learning and innovation within the organization"
+      ]
+    },
+    {
+        "title": "Senior Systems Engineer",
+        "company": "TEKsystems | Disney Parks & Resorts",
+        "start_date": "July 2022",
+        "end_date": "December 2023",
+        "achievements": [
+          "Managed AWS Cloud resources, including ECS EC2 and Fargate instances, API Gateway – Lambda integrations, ensuring optimal system performance",
+          "Managed messaging queues, such as AWS SNS/SQS, RMQ (RabbitMQ), ensuring reliable message delivery and performance optimization",
+          "Managed Akamai Edge CDN Redirector, configured WAF policies to mitigate vulnerabilities, and improved application’s performance, and user experience",
+          "Lead migration of legacy infrastructure using Terraform, created modular and scalable infrastructure modules for efficient deployment and management."
+        ]
+    },
+    {
+        "title": "Jr. DevOps/SRE Engineer",
+        "company": "Evercast LLC",
+        "start_date": "April 2021",
+        "end_date": "July 2022",
+        "achievements": [
+          "Provided highly available, fault tolerant infrastructure for production and non-production environments using Terraform and cloud provider AWS.",
+          "Created and maintained a continuous monitoring solution for EKS resources using open source Grafana stack.",
+          "Implemented IAM policies for delegated administration within AWS and managing IAM users, groups, roles, policies to grant fine – grained access to AWS resources.",
+          "Provided support for the customers with 24/7 on – call rotation, provided  after-hours maintenance."
+        ]
+    }    
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology and Management in Public Administration",
+      "institution": "University of Technology of Moldova",
+      "graduation_year": "2014"
+    },
+    {
+        "degree": "AWS Solutions Architect Associate 9YX1DXDDCEFEQMC9",
+        "institution": "AWS Training",
+        "graduation_year": "2020"
+    },
+    {
+        "degree": "AWS Cloud Engineering",
+        "institution": "Ziyotek Institute of Technology",
+        "graduation_year": "2020"
+      }    
+  ],
+  "projects": [
+    {
+      "name": "E-commerce Platform",
+      "description": "Full-stack e-commerce platform built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
+      "link": "https://github.com/yourusername/ecommerce-platform",
+      "technologies": ["React", "Node.js", "PostgreSQL", "Stripe API"]
+    },
+    {
+      "name": "Task Management App",
+      "description": "Real-time task management application with collaborative features and real-time updates using WebSockets.",
+      "link": "https://github.com/yourusername/task-manager",
+      "technologies": ["Vue.js", "Socket.io", "MongoDB", "Express"]
+    }
+  ],
+  "styling": {
+    "theme": "nature",
+    "primary_color": "#059669",
+    "secondary_color": "#047857",
+    "accent_color": "#10b981",
+    "text_color": "#1f2937",
+    "text_light": "#374151",
+    "background_color": "#f0fdf4",
+    "header_gradient": "linear-gradient(135deg, #059669 0%, #047857 100%)",
+    "font_family": "Source Sans Pro",
+    "accent_font": "Oswald"
+  },
+  "meta": {
+    "description": "Professional resume and portfolio",
+    "keywords": "software engineer, full-stack developer, web development, site reliability engineer, ITSM, automation, CI/CD, infrastructure as code, microservices, cloud infrastructure, enterprise incident management, vulnerability management, customer issue resolution, global financial environments, DevOps culture, Continuous Integration (CI) & Continuous Deployment/Delivery (CD) using Infrastructure as Code technologies, organizing workflows, solving complex problems, making accurate decisions based on sound judgement and analytical strengths, top performer driving Automation, Digital Transformation, Application Migration, and Security Risk Management projects, excellent understanding of all phases of Enterprise SDLC and ITSM frameworks",
+    "author": "Grigore Casim"
+  }
+} 

@@ -16,20 +16,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Sacramento&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&family=Roboto:wght@300;400;500&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&family=Lato:wght@300;400;700&family=Merriweather:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #0891b2;
-            --secondary-color: #0e7490;
-            --accent-color: #06b6d4;
-            --text-color: #0f172a;
-            --background-color: #f0f9ff;
-            --header-gradient: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
-            --font-family: 'Open Sans', sans-serif;
-            --accent-font: 'Poppins', serif;
+            --primary-color: #059669;
+            --secondary-color: #047857;
+            --accent-color: #10b981;
+            --text-color: #1f2937;
+            --background-color: #f0fdf4;
+            --header-gradient: linear-gradient(135deg, #059669 0%, #047857 100%);
+            --font-family: 'Source Sans Pro', sans-serif;
+            --accent-font: 'Oswald', serif;
         }
     </style>
     <script>
-        // Apply ocean theme by default
         document.addEventListener('DOMContentLoaded', function() {
-            document.body.className = 'theme-ocean';
+            const theme = 'nature';
+            if (theme && theme !== 'default') {
+                document.body.className = `theme-${theme}`;
+            }
         });
     </script>
 </head>
