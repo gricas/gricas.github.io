@@ -18,7 +18,7 @@
   --border-color: #eeeeee;
   --shadow-color: rgba(0, 0, 0, 0.08);
   --header-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --font-family: 'Cormorant Garamond', serif;
+  --font-family: 'Cormorant Garamond', san-serif;
   --accent-font: 'Sacramento', cursive;
   --border-radius: 12px;
   --transition: all 0.3s ease;
