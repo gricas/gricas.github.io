@@ -100,17 +100,22 @@
       }    
   ],
   "projects": [
-    {
-      "name": "E-commerce Platform",
-      "description": "Full-stack e-commerce platform built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-      "link": "https://github.com/yourusername/ecommerce-platform",
-      "technologies": ["React", "Node.js", "PostgreSQL", "Stripe API"]
+      {
+        "name": "Monitoring & Observability Solution",
+        "description": "Architected comprehensive monitoring stack using Prometheus, Grafana, and Mimir. Established alerting mechanisms and dashboards that reduced mean time to resolution (MTTR) by 60% and improved system reliability across 50+ microservices.",
+        "link": "",
+        "technologies": ["Prometheus", "Grafana", "Mimir", "Loki", "AlertManager", "Python", "Kubernetes", "Rancher", "Terraform"]
     },
     {
-      "name": "Task Management App",
-      "description": "Real-time task management application with collaborative features and real-time updates using WebSockets.",
-      "link": "https://github.com/yourusername/task-manager",
-      "technologies": ["Vue.js", "Socket.io", "MongoDB", "Express"]
+      "name": "Enterprise Infrastructure Modernization",
+      "description": "Led cross-functional team in migrating legacy on-premises infrastructure to AWS cloud, resulting in 40% cost reduction and 99.9% uptime. Implemented Infrastructure as Code using Terraform and Ansible, enabling rapid deployment and disaster recovery capabilities.",
+      "link": "",
+      "technologies": ["AWS", "Terraform", "Ansible", "Kubernetes", "CI/CD"]
+    },
+    {
+        "name": "Cloud Cost Optimization",
+        "description": "Led initiative to optimize cloud spending, implementing auto-scaling, resource tagging, and cost monitoring. Achieved 35% reduction in monthly cloud costs while maintaining performance.",
+        "technologies": ["AWS Cost Management", "Auto-scaling", "Monitoring", "Terraform", "Cloud Custodian"]
     }
   ],
   "styling": {
