@@ -4,22 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional resume and portfolio">
-    <meta name="author" content="[YOUR_NAME]">
-    <meta property="og:title" content="[YOUR_NAME] - Resume">
+    <meta name="author" content="Grigore Casim">
+    <meta property="og:title" content="Grigore Casim - Resume">
     <meta property="og:description" content="Professional resume and portfolio">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
-    <title>[YOUR_NAME] - Resume</title>
+    <title>Grigore Casim - Resume</title>
     <link rel="stylesheet" href="resume.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Sacramento&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&family=Roboto:wght@300;400;500&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&family=Lato:wght@300;400;700&family=Merriweather:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #1e40af;
+            --accent-color: #60a5fa;
+            --text-color: #f9fafb;
+            --background-color: #111827;
+            --header-gradient: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            --font-family: 'Source Sans Pro', sans-serif;
+            --accent-font: 'Oswald', serif;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const theme = 'dark';
+            if (theme && theme !== 'default') {
+                document.body.className = `theme-${theme}`;
+            }
+        });
+    </script>
 </head>
 <body>
     <header id="header">
         <div class="header-content">
-            <h1 id="name">[YOUR_NAME]</h1>
-            <p class="tagline">[YOUR_TITLE/PROFESSION]</p>
+            <h1 id="name">Grigore Casim</h1>
+            <p class="tagline">Site Reliability Engineer</p>
         </div>
     </header>
 
@@ -29,24 +49,30 @@
                 <h3>Contact</h3>
                 <div class="contact-item">
                     <span class="label">Email:</span>
-                    <a href="mailto:[YOUR_EMAIL]">[YOUR_EMAIL]</a>
+                    <a href="mailto:grigorecasim@gmail.com">grigorecasim@gmail.com</a>
                 </div>
                 <div class="contact-item">
                     <span class="label">Phone:</span>
-                    <a href="tel:[YOUR_PHONE]">[YOUR_PHONE]</a>
+                    <a href="tel:+1 (224) 493-0243 ">+1 (224) 493-0243 </a>
                 </div>
                 <div class="contact-item">
                     <span class="label">Location:</span>
-                    <span>[YOUR_LOCATION]</span>
+                    <span>Chicago, IL</span>
                 </div>
                 <div class="contact-item">
                     <span class="label">LinkedIn:</span>
-                    <a href="[YOUR_LINKEDIN]" target="_blank" rel="noopener">LinkedIn Profile</a>
+                    <a href="https://www.linkedin.com/in/grigore-c-9205631bb/" target="_blank" rel="noopener">LinkedIn Profile</a>
                 </div>
                 <div class="contact-item">
                     <span class="label">GitHub:</span>
-                    <a href="[YOUR_GITHUB]" target="_blank" rel="noopener">GitHub Profile</a>
+                    <a href="https://github.com/gricas" target="_blank" rel="noopener">GitHub Profile</a>
                 </div>
+                
+                <div class="contact-item">
+                    <span class="label">Website:</span>
+                    <a href="https://gricascloud.com/" target="_blank" rel="noopener">Personal Website</a>
+                </div>
+                
             </section>
 
             <section class="skills-section">
@@ -54,78 +80,168 @@
                 <div class="skill-category">
                     <h4>Programming Languages</h4>
                     <ul class="skills-list">
-                        <li>[LANGUAGE_1]</li>
-                        <li>[LANGUAGE_2]</li>
-                        <li>[LANGUAGE_3]</li>
+                        <li>JavaScript</li><li>Python</li><li>Go</li><li>Java</li><li>TypeScript</li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h4>Frameworks & Tools</h4>
                     <ul class="skills-list">
-                        <li>[FRAMEWORK_1]</li>
-                        <li>[FRAMEWORK_2]</li>
-                        <li>[FRAMEWORK_3]</li>
+                        <li>Ansible</li><li>AWS/GCP</li><li>Kubernetes/RKE/EKS</li><li>PostgreSQL</li><li>React</li><li>Node.js</li><li>Spring Boot</li>
                     </ul>
                 </div>
+                
+                <div class="skill-category">
+                    <h4>Soft Skills</h4>
+                    <ul class="skills-list">
+                        <li>Team Leadership</li><li>Agile Development</li><li>Technical Writing</li><li>Problem Solving</li>
+                    </ul>
+                </div>
+                
             </section>
         </aside>
 
         <div class="main-content">
             <section class="summary">
                 <h2>Professional Summary</h2>
-                <p>[YOUR_PROFESSIONAL_SUMMARY_PARAGRAPH]</p>
+                <p>IT Engineer with 5+ years of experience in architecting enterprise-scale cloud infrastructure and automation solutions for Fortune 500 financial services and high-growth technology companies. Proven expertise in Kubernetes orchestration, Infrastructure as Code, and mission-critical incident management across hybrid cloud environments. Led infrastructure optimization initiatives saving $120K+ annually while maintaining 99.9% uptime SLAs in regulated financial environments.</p>
             </section>
 
             <section class="experience">
                 <h2>Professional Experience</h2>
+                
                 <div class="job">
                     <div class="job-header">
-                        <h3>[JOB_TITLE]</h3>
-                        <span class="company">[COMPANY_NAME]</span>
-                        <span class="date-range">[START_DATE] - [END_DATE]</span>
+                        <h3>Senior Site Reliability Engineer | Financial Services Infrastructure</h3>
+                        <span class="company">Collabera Inc | Bank of America</span>
+                        <span class="date-range">January 2025 - June 2025</span>
                     </div>
                     <ul class="achievements">
-                        <li>[ACHIEVEMENT_OR_RESPONSIBILITY_1]</li>
-                        <li>[ACHIEVEMENT_OR_RESPONSIBILITY_2]</li>
-                        <li>[ACHIEVEMENT_OR_RESPONSIBILITY_3]</li>
+                        <li>Managed enterprise incident lifecycle in regulated financial environment, maintaining 99.9% SLA compliance across 100+ OpenShift clusters and UNIX virtual machines</li><li>Conducted comprehensive vulnerability assessments and coordinated remediation efforts across enterprise infrastructure, reducing security exposure by 40%</li><li>Architected automated incident response procedures using ServiceNow ITSM, decreasing MTTR from 4 hours to 90 minutes</li><li>Collaborated with Security, Network Operations, and Development teams ensuring SOX compliance and regulatory requirements</li>
                     </ul>
                 </div>
                 
                 <div class="job">
                     <div class="job-header">
-                        <h3>[JOB_TITLE_2]</h3>
-                        <span class="company">[COMPANY_NAME_2]</span>
-                        <span class="date-range">[START_DATE] - [END_DATE]</span>
+                        <h3>Senior Site Reliability Engineer | Cloud Infrastructure & Automation</h3>
+                        <span class="company">TEKsystems | Startup AI Infrastructure Solutions</span>
+                        <span class="date-range">December 2023 - December 2024</span>
                     </div>
                     <ul class="achievements">
-                        <li>[ACHIEVEMENT_OR_RESPONSIBILITY_1]</li>
-                        <li>[ACHIEVEMENT_OR_RESPONSIBILITY_2]</li>
+                        <li>Provisioned and scaled Rancher Kubernetes and EKS infrastructure supporting startup growth from 200 to 500+ bare-metal compute nodes.</li><li>Implemented comprehensive CI/CD pipelines using GitLab, Terraform, and Argo CD, reducing customer onboarding from 21 days to 3 days (85% improvement)</li><li>Automated infrastructure provisioning workflows with Harness.io and Terraform, ensuring consistent deployment across multi-region AWS environments</li><li>Automated GPU compute infrastructure deployment using Ansible playbooks for CUDA driver management and Slurm workload scheduling across distributed bare-metal environments</li>
                     </ul>
                 </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <h3>Senior DevOps Engineer | Enterprise Cloud Operations</h3>
+                        <span class="company">TEKsystems | Disney Parks & Resorts</span>
+                        <span class="date-range">July 2022 - December 2023</span>
+                    </div>
+                    <ul class="achievements">
+                        <li>Architected AWS cloud infrastructure including ECS Fargate, API Gateway, and Lambda integrations supporting millions of daily park visitors</li><li>Managed enterprise messaging systems (SNS/SQS, RabbitMQ) ensuring 99.99% message delivery reliability for critical park operations</li><li>Led infrastructure migration initiatives using Terraform, creating modular and scalable infrastructure components reducing deployment time by 50%e</li><li>Configured Akamai CDN and WAF policies optimizing application performance and mitigating security vulnerabilities</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <h3>DevOps Engineer | Cloud Infrastructure & Cost Optimization</h3>
+                        <span class="company">Evercast LLC</span>
+                        <span class="date-range">April 2021 - July 2022</span>
+                    </div>
+                    <ul class="achievements">
+                        <li>Designed highly available, fault-tolerant infrastructure using Terraform and AWS, supporting real-time media streaming applications</li><li>Optimized EKS application deployments reducing production deployment time from 30 to 12 minutes through automated CI/CD pipelines</li><li>Implemented comprehensive monitoring solution using Grafana stack with automated alerting, improving system visibility and incident response.</li><li>Applied Cloud Custodian automation policies achieving $120K annual cost savings through intelligent resource management</li>
+                    </ul>
+                </div>
+                
             </section>
 
             <section class="education">
                 <h2>Education</h2>
+                
                 <div class="education-item">
-                    <h3>[DEGREE]</h3>
-                    <span class="institution">[UNIVERSITY/COLLEGE]</span>
-                    <span class="date-range">[GRADUATION_YEAR]</span>
+                    <h3>Bachelor of Technology and Management in Public Administration</h3>
+                    <span class="institution">University of Technology of Moldova</span>
+                    <span class="date-range">2014</span>
                 </div>
+                
+                <div class="education-item">
+                    <h3>AWS Solutions Architect Associate 9YX1DXDDCEFEQMC9</h3>
+                    <span class="institution">AWS Training</span>
+                    <span class="date-range">2020</span>
+                </div>
+                
+                <div class="education-item">
+                    <h3>AWS Cloud Engineering</h3>
+                    <span class="institution">Ziyotek Institute of Technology</span>
+                    <span class="date-range">2020</span>
+                </div>
+                
             </section>
 
             <section class="projects">
                 <h2>Notable Projects</h2>
+                
                 <div class="project">
-                    <h3>[PROJECT_NAME]</h3>
-                    <p>[PROJECT_DESCRIPTION_AND_TECHNOLOGIES_USED]</p>
-                    <a href="[PROJECT_LINK]" target="_blank" rel="noopener">View Project</a>
+                    <h3>Scale Management</h3>
+                    <p>Successfully supported infrastructure growth from 200 to 500+ nodes while maintaining performance</p>
+                    
+                    <div class="project-technologies">
+                        <strong>Technologies:</strong> Prometheus, Grafana, Mimir, Loki, AlertManager, Python, Kubernetes, Rancher, Terraform, Ansible, Slurm
+                    </div>
+                    
+                    <a href="" target="_blank" rel="noopener">View Project</a>
                 </div>
+                
+                <div class="project">
+                    <h3>Cloud Cost Optimization</h3>
+                    <p>Delivered $120K+ annual infrastructure cost savings through automated resource management</p>
+                    
+                    <div class="project-technologies">
+                        <strong>Technologies:</strong> AWS Cost Management, Auto-scaling, Monitoring, Terraform, Cloud Custodian
+                    </div>
+                    
+                    <a href="undefined" target="_blank" rel="noopener">View Project</a>
+                </div>
+                
+                <div class="project">
+                    <h3>Compliance Expertise</h3>
+                    <p>Maintained SOX and regulatory compliance in Fortune 500 financial services environment</p>
+                    
+                    <div class="project-technologies">
+                        <strong>Technologies:</strong> SOX, Regulatory Compliance, ITSM, ServiceNow, ITIL, IT Governance, IT Risk Management, IT Audit, IT Security, IT Compliance
+                    </div>
+                    
+                    <a href="undefined" target="_blank" rel="noopener">View Project</a>
+                </div>
+                
+                <div class="project">
+                    <h3>Knowledge Sharing</h3>
+                    <p>Served as Kubernetes instructor, fostering team development and best practices adoption</p>
+                    
+                    <div class="project-technologies">
+                        <strong>Technologies:</strong> AWS, Terraform, Ansible, Kubernetes, CI/CD
+                    </div>
+                    
+                    <a href="" target="_blank" rel="noopener">View Project</a>
+                </div>
+                
             </section>
         </div>
     </main>
 
     <footer id="footer">
-        <p>&copy; 2024 [YOUR_NAME]. All rights reserved.</p>
+        <p>&copy; 2025 Grigore Casim. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Apply dynamic styling
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.getElementById('header');
+            if (header) {
+                header.style.background = getComputedStyle(document.documentElement)
+                    .getPropertyValue('--header-gradient');
+            }
+        });
+    </script>
 </body>
 </html>

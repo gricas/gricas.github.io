@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional resume and portfolio">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Your Name - Resume">
+    <meta property="og:description" content="Professional resume and portfolio">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <title>Your Name - Resume</title>
+    <link rel="stylesheet" href="resume.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <select id="themeSelect" onchange="changeTheme(this.value)">
+            <option value="default">Default Theme</option>
+            <option value="dark">Dark Theme</option>
+            <option value="nature">Nature Theme</option>
+            <option value="ocean">Ocean Theme</option>
+            <option value="sunset">Sunset Theme</option>
+        </select>
+    </div>
+
+    <header id="header">
+        <div class="header-content">
+            <h1 id="name">Loading...</h1>
+            <p class="tagline" id="tagline">Loading...</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside class="sidebar">
+            <section class="contact-info">
+                <h3>Contact</h3>
+                <div id="contactInfo">
+                    <p>Loading contact information...</p>
+                </div>
+            </section>
+
+            <section class="skills-section">
+                <h3>Technical Skills</h3>
+                <div id="skillsInfo">
+                    <p>Loading skills...</p>
+                </div>
+            </section>
+        </aside>
+
+        <div class="main-content">
+            <section class="summary">
+                <h2>Professional Summary</h2>
+                <p id="summary">Loading summary...</p>
+            </section>
+
+            <section class="experience">
+                <h2>Professional Experience</h2>
+                <div id="experienceInfo">
+                    <p>Loading experience...</p>
+                </div>
+            </section>
+
+            <section class="education">
+                <h2>Education</h2>
+                <div id="educationInfo">
+                    <p>Loading education...</p>
+                </div>
+            </section>
+
+            <section class="projects">
+                <h2>Notable Projects</h2>
+                <div id="projectsInfo">
+                    <p>Loading projects...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <p id="footerText">&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let config = null;
+
+        // Theme switcher function
+        function changeTheme(theme) {
+            document.body.className = theme === 'default' ? '' : `theme-${theme}`;
+            localStorage.setItem('resume-theme', theme);
+        }
+
+        // Load saved theme
+        function loadSavedTheme() {
+            const savedTheme = localStorage.getItem('resume-theme');
+            if (savedTheme) {
+                document.getElementById('themeSelect').value = savedTheme;
+                changeTheme(savedTheme);
+            }
+        }
+
+        // Load and render config
+        async function loadConfig() {
+            try {
+                const response = await fetch('./config.json');
+                config = await response.json();
+                renderResume();
+            } catch (error) {
+                console.error('Error loading config:', error);
+                document.body.innerHTML = '<div style="padding: 2rem; text-align: center;"><h1>Error Loading Resume</h1><p>Could not load configuration file. Please check if config.json exists.</p></div>';
+            }
+        }
+
+        function renderResume() {
+            if (!config) return;
+
+            // Update meta tags
+            document.title = `${config.personal.name} - Resume`;
+            document.querySelector('meta[name="description"]').setAttribute('content', config.meta.description);
+            document.querySelector('meta[name="author"]').setAttribute('content', config.meta.author);
+            document.querySelector('meta[property="og:title"]').setAttribute('content', `${config.personal.name} - Resume`);
+            document.querySelector('meta[property="og:description"]').setAttribute('content', config.meta.description);
+
+            // Update header
+            document.getElementById('name').textContent = config.personal.name;
+            document.getElementById('tagline').textContent = config.personal.title;
+
+            // Update contact info
+            const contactInfo = document.getElementById('contactInfo');
+            contactInfo.innerHTML = `
+                <div class="contact-item">
+                    <span class="label">Email:</span>
+                    <a href="mailto:${config.personal.email}">${config.personal.email}</a>
+                </div>
+                <div class="contact-item">
+                    <span class="label">Phone:</span>
+                    <a href="tel:${config.personal.phone}">${config.personal.phone}</a>
+                </div>
+                <div class="contact-item">
+                    <span class="label">Location:</span>
+                    <span>${config.personal.location}</span>
+                </div>
+                <div class="contact-item">
+                    <span class="label">LinkedIn:</span>
+                    <a href="${config.personal.linkedin}" target="_blank" rel="noopener">LinkedIn Profile</a>
+                </div>
+                <div class="contact-item">
+                    <span class="label">GitHub:</span>
+                    <a href="${config.personal.github}" target="_blank" rel="noopener">GitHub Profile</a>
+                </div>
+                ${config.personal.website ? `
+                <div class="contact-item">
+                    <span class="label">Website:</span>
+                    <a href="${config.personal.website}" target="_blank" rel="noopener">Personal Website</a>
+                </div>
+                ` : ''}
+            `;
+
+            // Update skills
+            const skillsInfo = document.getElementById('skillsInfo');
+            skillsInfo.innerHTML = `
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <ul class="skills-list">
+                        ${config.skills.programming_languages.map(lang => `<li>${lang}</li>`).join('')}
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Frameworks & Tools</h4>
+                    <ul class="skills-list">
+                        ${config.skills.frameworks_tools.map(tool => `<li>${tool}</li>`).join('')}
+                    </ul>
+                </div>
+                ${config.skills.soft_skills ? `
+                <div class="skill-category">
+                    <h4>Soft Skills</h4>
+                    <ul class="skills-list">
+                        ${config.skills.soft_skills.map(skill => `<li>${skill}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+            `;
+
+            // Update summary
+            document.getElementById('summary').textContent = config.summary;
+
+            // Update experience
+            const experienceInfo = document.getElementById('experienceInfo');
+            experienceInfo.innerHTML = config.experience.map(job => `
+                <div class="job">
+                    <div class="job-header">
+                        <h3>${job.title}</h3>
+                        <span class="company">${job.company}</span>
+                        <span class="date-range">${job.start_date} - ${job.end_date}</span>
+                    </div>
+                    <ul class="achievements">
+                        ${job.achievements.map(achievement => `<li>${achievement}</li>`).join('')}
+                    </ul>
+                </div>
+            `).join('');
+
+            // Update education
+            const educationInfo = document.getElementById('educationInfo');
+            educationInfo.innerHTML = config.education.map(edu => `
+                <div class="education-item">
+                    <h3>${edu.degree}</h3>
+                    <span class="institution">${edu.institution}</span>
+                    <span class="date-range">${edu.graduation_year}</span>
+                </div>
+            `).join('');
+
+            // Update projects
+            const projectsInfo = document.getElementById('projectsInfo');
+            projectsInfo.innerHTML = config.projects.map(project => `
+                <div class="project">
+                    <h3>${project.name}</h3>
+                    <p>${project.description}</p>
+                    ${project.technologies ? `
+                    <div class="project-technologies">
+                        <strong>Technologies:</strong> ${project.technologies.join(', ')}
+                    </div>
+                    ` : ''}
+                    <a href="${project.link}" target="_blank" rel="noopener">View Project</a>
+                </div>
+            `).join('');
+
+            // Update footer
+            document.getElementById('footerText').textContent = `© ${new Date().getFullYear()} ${config.personal.name}. All rights reserved.`;
+
+            // Apply custom styling if specified in config
+            if (config.styling) {
+                const style = document.createElement('style');
+                style.textContent = `
+                    :root {
+                        --primary-color: ${config.styling.primary_color};
+                        --secondary-color: ${config.styling.secondary_color};
+                        --accent-color: ${config.styling.accent_color};
+                        --text-color: ${config.styling.text_color};
+                        --background-color: ${config.styling.background_color};
+                        --header-gradient: ${config.styling.header_gradient};
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            loadSavedTheme();
+            loadConfig();
+        });
+    </script>
+</body>
+</html> 
