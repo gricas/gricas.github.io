@@ -385,8 +385,8 @@ body {
 
 /* Footer */
 #footer {
-  background: var(--text-color);
-  color: white;
+  background: var(--surface-color);
+  color: var(--text-color);
   text-align: center;
   padding: 2rem;
   margin-top: 3rem;
