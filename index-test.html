@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional resume and portfolio">
+    <meta name="author" content="Grigore Casim">
+    <meta property="og:title" content="Grigore Casim - Resume">
+    <meta property="og:description" content="Professional resume and portfolio">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <title>Grigore Casim - Resume</title>
+    <link rel="stylesheet" href="resume.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Sacramento&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&family=Roboto:wght@300;400;500&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&family=Lato:wght@300;400;700&family=Merriweather:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="theme-ocean">
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <select id="themeSelect" onchange="changeTheme(this.value)">
+            <option value="default">Default Theme</option>
+            <option value="dark">Dark Theme</option>
+            <option value="nature">Nature Theme</option>
+            <option value="ocean" selected>Ocean Theme</option>
+            <option value="sunset">Sunset Theme</option>
+        </select>
+        <select id="fontSelect" onchange="changeFont(this.value)" style="margin-left: 10px;">
+            <option value="cormorant">Cormorant Garamond</option>
+            <option value="inter">Inter + Playfair</option>
+            <option value="roboto">Roboto + Montserrat</option>
+            <option value="opensans" selected>Open Sans + Poppins</option>
+            <option value="lato">Lato + Merriweather</option>
+            <option value="source">Source Sans + Oswald</option>
+        </select>
+    </div>
+
+    <header id="header">
+        <div class="header-content">
+            <h1 id="name">Grigore Casim</h1>
+            <p class="tagline" id="tagline">Site Reliability Engineer</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside class="sidebar">
+            <section class="contact-info">
+                <h3>Contact</h3>
+                <div id="contactInfo">
+                    <div class="contact-item">
+                        <span class="label">Email:</span>
+                        <a href="mailto:grigorecasim@gmail.com">grigorecasim@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">Phone:</span>
+                        <a href="tel:+1 (224) 493-0243">+1 (224) 493-0243</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">Location:</span>
+                        <span>Chicago, IL</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">LinkedIn:</span>
+                        <a href="https://www.linkedin.com/in/grigore-c-9205631bb/" target="_blank" rel="noopener">LinkedIn Profile</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">GitHub:</span>
+                        <a href="https://github.com/gricas" target="_blank" rel="noopener">GitHub Profile</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">Website:</span>
+                        <a href="https://gricas.github.io/" target="_blank" rel="noopener">Personal Website</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills-section">
+                <h3>Technical Skills</h3>
+                <div id="skillsInfo">
+                    <div class="skill-category">
+                        <h4>Programming Languages</h4>
+                        <ul class="skills-list">
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Go</li>
+                            <li>Java</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Frameworks & Tools</h4>
+                        <ul class="skills-list">
+                            <li>Ansible</li>
+                            <li>AWS/GCP</li>
+                            <li>Kubernetes/RKE/EKS</li>
+                            <li>PostgreSQL</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Spring Boot</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Soft Skills</h4>
+                        <ul class="skills-list">
+                            <li>Team Leadership</li>
+                            <li>Agile Development</li>
+                            <li>Technical Writing</li>
+                            <li>Problem Solving</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <div class="main-content">
+            <section class="summary">
+                <h2>Professional Summary</h2>
+                <p id="summary">Site Reliability Engineer with 5+ years of experience designing microservices, managing cloud infrastructure, and leading incident response. Skilled in ITSM, automation, CI/CD, and Infrastructure as Code. Strong problem solver with a passion for scalable solutions and mentoring.</p>
+            </section>
+
+            <section class="experience">
+                <h2>Professional Experience</h2>
+                <div id="experienceInfo">
+                    <div class="job">
+                        <div class="job-header">
+                            <h3>Senior Site Reliability Engineer</h3>
+                            <span class="company">Collabera Inc</span>
+                            <span class="date-range">January 2025 - Present</span>
+                        </div>
+                        <ul class="achievements">
+                            <li>Resolve critical customer-side issues through comprehensive ITSM processes, maintaining SLA compliance and ensuring minimal business impact for financial services operations</li>
+                            <li>Manage incident lifecycle from initial report through resolution, utilizing ServiceNow and enterprise ticketing systems to track, escalate, and document incidents effectively</li>
+                            <li>Conduct vulnerability management assessments, identifying, prioritizing, and coordinating remediation efforts for security risks across enterprise infrastructure OpenShift, UNIX virtual machines</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <div class="job-header">
+                            <h3>Senior Site Reliability Engineer</h3>
+                            <span class="company">Startup AI Infrastructure Solutions</span>
+                            <span class="date-range">December 2023 - December 2024</span>
+                        </div>
+                        <ul class="achievements">
+                            <li>Developed automated infrastructure solutions with Ansible and Terraform for both on-premises data centers and AWS environments.</li>
+                            <li>Provisioned and supported Rancher Kubernetes and EKS for modernization, application portability, resiliency and accelerated disaster recovery.</li>
+                            <li>Facilitated knowledge sharing and cross-functional collaboration through documentation, training sessions, and participation in internal communities of practice, fostering a culture of learning and innovation within the organization</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <div class="job-header">
+                            <h3>Senior Systems Engineer</h3>
+                            <span class="company">TekSystems</span>
+                            <span class="date-range">July 2022 - December 2023</span>
+                        </div>
+                        <ul class="achievements">
+                            <li>Managed AWS Cloud resources, including ECS EC2 and Fargate instances, API Gateway – Lambda integrations, ensuring optimal system performance</li>
+                            <li>Managed messaging queues, such as AWS SNS/SQS, RMQ (RabbitMQ), ensuring reliable message delivery and performance optimization</li>
+                            <li>Managed Akamai Edge CDN Redirector, configured WAF policies to mitigate vulnerabilities, and improved application's performance, and user experience</li>
+                            <li>Lead migration of legacy infrastructure using Terraform, created modular and scalable infrastructure modules for efficient deployment and management.</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <div class="job-header">
+                            <h3>Jr. DevOps/SRE Engineer</h3>
+                            <span class="company">Evercast LLC</span>
+                            <span class="date-range">April 2021 - July 2022</span>
+                        </div>
+                        <ul class="achievements">
+                            <li>Provided highly available, fault tolerant infrastructure for production and non-production environments using Terraform and cloud provider AWS.</li>
+                            <li>Created and maintained a continuous monitoring solution for EKS resources using open source Grafana stack.</li>
+                            <li>Implemented IAM policies for delegated administration within AWS and managing IAM users, groups, roles, policies to grant fine – grained access to AWS resources.</li>
+                            <li>Provided support for the customers with 24/7 on – call rotation, provided after-hours maintenance.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="education">
+                <h2>Education</h2>
+                <div id="educationInfo">
+                    <div class="education-item">
+                        <h3>Bachelor of Technology and Management in Public Administration</h3>
+                        <span class="institution">University of Technology of Moldova</span>
+                        <span class="date-range">2014</span>
+                    </div>
+                    <div class="education-item">
+                        <h3>AWS Solutions Architect Associate 9YX1DXDDCEFEQMC9</h3>
+                        <span class="institution">AWS Training</span>
+                        <span class="date-range">2020</span>
+                    </div>
+                    <div class="education-item">
+                        <h3>AWS Cloud Engineering</h3>
+                        <span class="institution">Ziyotek Institute of Technology</span>
+                        <span class="date-range">2020</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects">
+                <h2>Notable Projects</h2>
+                <div id="projectsInfo">
+                    <div class="project">
+                        <h3>E-commerce Platform</h3>
+                        <p>Full-stack e-commerce platform built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.</p>
+                        <div class="project-technologies">
+                            <strong>Technologies:</strong> React, Node.js, PostgreSQL, Stripe API
+                        </div>
+                        <a href="https://github.com/yourusername/ecommerce-platform" target="_blank" rel="noopener">View Project</a>
+                    </div>
+                    <div class="project">
+                        <h3>Task Management App</h3>
+                        <p>Real-time task management application with collaborative features and real-time updates using WebSockets.</p>
+                        <div class="project-technologies">
+                            <strong>Technologies:</strong> Vue.js, Socket.io, MongoDB, Express
+                        </div>
+                        <a href="https://github.com/yourusername/task-manager" target="_blank" rel="noopener">View Project</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <p id="footerText">&copy; 2024 Grigore Casim. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Theme switcher function
+        function changeTheme(theme) {
+            document.body.className = theme === 'default' ? '' : `theme-${theme}`;
+            localStorage.setItem('resume-theme', theme);
+        }
+
+        // Font switcher function
+        function changeFont(font) {
+            const root = document.documentElement;
+            const fonts = {
+                'cormorant': { main: "'Cormorant Garamond', serif", accent: "'Sacramento', cursive" },
+                'inter': { main: "'Inter', sans-serif", accent: "'Playfair Display', serif" },
+                'roboto': { main: "'Roboto', sans-serif", accent: "'Montserrat', sans-serif" },
+                'opensans': { main: "'Open Sans', sans-serif", accent: "'Poppins', sans-serif" },
+                'lato': { main: "'Lato', sans-serif", accent: "'Merriweather', serif" },
+                'source': { main: "'Source Sans Pro', sans-serif", accent: "'Oswald', sans-serif" }
+            };
+            
+            if (fonts[font]) {
+                root.style.setProperty('--font-family', fonts[font].main);
+                root.style.setProperty('--accent-font', fonts[font].accent);
+                localStorage.setItem('resume-font', font);
+            }
+        }
+
+        // Load saved theme and font
+        function loadSavedSettings() {
+            const savedTheme = localStorage.getItem('resume-theme');
+            const savedFont = localStorage.getItem('resume-font');
+            
+            if (savedTheme) {
+                document.getElementById('themeSelect').value = savedTheme;
+                changeTheme(savedTheme);
+            }
+            
+            if (savedFont) {
+                document.getElementById('fontSelect').value = savedFont;
+                changeFont(savedFont);
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            loadSavedSettings();
+            
+            // Apply default theme from config if no saved theme
+            if (!localStorage.getItem('resume-theme')) {
+                // You can set this to match your config.json theme
+                const defaultTheme = 'ocean'; // Change this to match config.json
+                changeTheme(defaultTheme);
+                document.getElementById('themeSelect').value = defaultTheme;
+            }
+            
+            // Apply default font from config if no saved font
+            if (!localStorage.getItem('resume-font')) {
+                const defaultFont = 'opensans'; // Change this to match config.json
+                changeFont(defaultFont);
+                document.getElementById('fontSelect').value = defaultFont;
+            }
+        });
+    </script>
+</body>
+</html> 
