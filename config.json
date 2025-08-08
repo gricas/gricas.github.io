@@ -116,7 +116,12 @@
         "name": "Cloud Cost Optimization",
         "description": "Led initiative to optimize cloud spending, implementing auto-scaling, resource tagging, and cost monitoring. Achieved 35% reduction in monthly cloud costs while maintaining performance.",
         "technologies": ["AWS Cost Management", "Auto-scaling", "Monitoring", "Terraform", "Cloud Custodian"]
-    }
+    },
+    {
+      "name": "Personal Website",
+      "description": "Developed a personal website using HTML, CSS, and JavaScript to showcase my skills and projects. The website is hosted AWS S3 and CloudFront. Integrated with K3s and Raspberry Pi. https://www.gricascloud.com",
+      "technologies": ["HTML", "CSS", "JavaScript", "GitHub Pages", "K3s", "Raspberry Pi"]
+  }    
   ],
   "styling": {
     "theme": "dark",
