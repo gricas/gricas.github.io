@@ -9,7 +9,7 @@
     "github": "https://github.com/gricas",
     "website": "https://gricascloud.com/"
   },
-  "summary": "IT Engineer with 5+ years of experience in architecting enterprise-scale cloud infrastructure and automation solutions for Fortune 500 financial services and high-growth technology companies. Proven expertise in Kubernetes orchestration, Infrastructure as Code, and mission-critical incident management across hybrid cloud environments. Led infrastructure optimization initiatives saving $120K+ annually while maintaining 99.9% uptime SLAs in regulated financial environments.",
+  "summary": "Site Reliability Engineer with 8+ years of experience designing microservices, managing cloud infrastructure, and leading incident response. Skilled in ITSM, automation, CI/CD, and Infrastructure as Code. Strong problem solver with a passion for scalable solutions and mentoring.",
   "skills": {
     "programming_languages": [
       "JavaScript",
@@ -36,53 +36,70 @@
   },
   "experience": [
     {
-      "title": "Senior Site Reliability Engineer | Financial Services Infrastructure",
+      "title": "Senior Site Reliability Engineer",
       "company": "Collabera Inc | Bank of America",
       "start_date": "January 2025",
-      "end_date": "June 2025",
+      "end_date": "Present",
       "achievements": [
-        "Managed enterprise incident lifecycle in regulated financial environment, maintaining 99.9% SLA compliance across 100+ OpenShift clusters and UNIX virtual machines",
-        "Conducted comprehensive vulnerability assessments and coordinated remediation efforts across enterprise infrastructure, reducing security exposure by 40%",
-        "Architected automated incident response procedures using ServiceNow ITSM, decreasing MTTR from 4 hours to 90 minutes",
-        "Collaborated with Security, Network Operations, and Development teams ensuring SOX compliance and regulatory requirements"
+        "Oversaw enterprise incident lifecycle in a regulated financial environment, sustaining 99.9% SLA compliance across 100+ OpenShift clusters and 2,000+ UNIX systems.",
+        "Conducted vulnerability assessments and coordinated remediation, closing 1,200+ findings in six months and reducing security exposure by 40%.",
+        "Architected automated incident response workflows with ServiceNow ITSM, decreasing MTTR from 4 hours to 90 minutes and saving ~1,000 engineering hours annually.",
+        "Supported mission-critical trading and banking applications processing $50M+ daily transactions with zero missed cutoffs during tenure.",
+        "Collaborated with Security, Network, and Development teams, contributing to 3 successful SOX audits with no major findings."
       ]
     },
     {
-      "title": "Senior Site Reliability Engineer | Cloud Infrastructure & Automation",
+      "title": "Senior Site Reliability Engineer",
       "company": "TEKsystems | Startup AI Infrastructure Solutions",
       "start_date": "December 2023",
       "end_date": "December 2024",
       "achievements": [
-        "Provisioned and scaled Rancher Kubernetes and EKS infrastructure supporting startup growth from 200 to 500+ bare-metal compute nodes.",
-        "Implemented comprehensive CI/CD pipelines using GitLab, Terraform, and Argo CD, reducing customer onboarding from 21 days to 3 days (85% improvement)",
-        "Automated infrastructure provisioning workflows with Harness.io and Terraform, ensuring consistent deployment across multi-region AWS environments",
-        "Automated GPU compute infrastructure deployment using Ansible playbooks for CUDA driver management and Slurm workload scheduling across distributed bare-metal environments"
+        "Led Site Reliability Engineering for the Observability platform, managing Mimir and OpenTelemetry API endpoints to ensure scalable metrics ingestion and reliable time-series storage supporting millions of active series.",
+        "Automated multi-region AWS deployments with Harness.io and Terraform, cutting provisioning times from 4 hours to 30 minutes.",
+        "Deployed GPU compute automation with Ansible for CUDA drivers and Slurm scheduling, reducing GPU job queue times by 60%.",
+        "Implemented SAST/DAST  in GitLab pipelines, detecting 300+ vulnerable dependencies and reducing remediation time from 3 weeks to 5 days.",
+        "Optimized Kubernetes workloads, lowering AWS spend by 25% (~$750K annually) while maintaining SLAs.",
+        "Facilitated knowledge sharing and cross-functional collaboration through documentation, training sessions, and participation in internal communities of practice, fostering a culture of learning and innovation within the organization"
       ]
     },
     {
-        "title": "Senior DevOps Engineer | Enterprise Cloud Operations",
+        "title": "Senior Systems Engineer",
         "company": "TEKsystems | Disney Parks & Resorts",
         "start_date": "July 2022",
         "end_date": "December 2023",
         "achievements": [
-          "Architected AWS cloud infrastructure including ECS Fargate, API Gateway, and Lambda integrations supporting millions of daily park visitors",
-          "Managed enterprise messaging systems (SNS/SQS, RabbitMQ) ensuring 99.99% message delivery reliability for critical park operations",
-          "Led infrastructure migration initiatives using Terraform, creating modular and scalable infrastructure components reducing deployment time by 50%e",
-          "Configured Akamai CDN and WAF policies optimizing application performance and mitigating security vulnerabilities"
+          "Engineered AWS infrastructure with ECS Fargate, API Gateway, and Lambda to serve 40,000+ daily park visitors with 99.99% uptime.",
+          "Standardized Terraform modules for multi-region workloads, cutting provisioning time by 50% and enabling 60+ applications to migrate to IAC.",
+          "Managed SNS/SQS and RabbitMQ systems processing 50M+ messages daily with 99.99% delivery reliability.",
+          "Coordinated cost optimization initiatives, reducing cloud spend by 20% (~$2.5M annually) while maintaining PCI compliance.",
+          "Directed incident management across global teams, reducing average resolution time by 35%, and mentored 8 engineers in incident postmortem practices."
         ]
     },
     {
-        "title": "DevOps Engineer | Cloud Infrastructure & Cost Optimization",
+        "title": "Jr. DevOps/SRE Engineer",
         "company": "Evercast LLC",
         "start_date": "April 2021",
         "end_date": "July 2022",
         "achievements": [
-          "Designed highly available, fault-tolerant infrastructure using Terraform and AWS, supporting real-time media streaming applications",
-          "Optimized EKS application deployments reducing production deployment time from 30 to 12 minutes through automated CI/CD pipelines",
-          "Implemented comprehensive monitoring solution using Grafana stack with automated alerting, improving system visibility and incident response.",
-          "Applied Cloud Custodian automation policies achieving $120K annual cost savings through intelligent resource management"
+          "Designed AWS infrastructure with Terraform to support 24/7 real-time streaming sessions for 10K+ users.",
+          "Optimized EKS deployments, cutting production rollout times from 30 to 12 minutes and increasing release frequency by 3x",
+          "Implemented Grafana/Prometheus stack with automated alerting, reducing mean time to detection (MTTD) by 70%.",
+          "Applied Cloud Custodian policies, achieving $120K annual cost savings through automated resource lifecycle management.",
+          "Restructured IAM policies, eliminating 95% of overly-permissive roles and improving audit compliance."
         ]
-    }    
+    },
+    {
+        "title": "AWS Cloud Engineer",
+        "company": "Ukietech Inc",
+        "start_date": "January 2017",
+        "end_date": "March 2021",
+        "achievements": [
+          "Designed and documented multi-tier managed services in AWS, supporting 50+ business applications and 100K+ monthly users.",
+          "Deployed Terraform-based infrastructure patterns, reducing environment setup from 2 weeks to 2 days.",
+          "Implemented SCA tooling in Jenkins pipelines, flagging 250+ open-source vulnerabilities and reducing remediation from 2 months to 10 days.",
+          "Supported enterprise documentation in Confluence and Jira, creating 100+ knowledge base articles for cross-team use."
+        ]
+    }
   ],
   "education": [
     {
@@ -103,27 +120,27 @@
   ],
   "projects": [
       {
-        "name": "Scale Management",
-        "description": "Successfully supported infrastructure growth from 200 to 500+ nodes while maintaining performance",
+        "name": "Monitoring & Observability Solution",
+        "description": "Architected comprehensive monitoring stack using Prometheus, Grafana, and Mimir. Established alerting mechanisms and dashboards that reduced mean time to resolution (MTTR) by 60% and improved system reliability across 50+ microservices.",
         "link": "",
-        "technologies": ["Prometheus", "Grafana", "Mimir", "Loki", "AlertManager", "Python", "Kubernetes", "Rancher", "Terraform", "Ansible", "Slurm"]
+        "technologies": ["Prometheus", "Grafana", "Mimir", "Loki", "AlertManager", "Python", "Kubernetes", "Rancher", "Terraform"]
+    },
+    {
+      "name": "Enterprise Infrastructure Modernization",
+      "description": "Led cross-functional team in migrating legacy on-premises infrastructure to AWS cloud, resulting in 40% cost reduction and 99.9% uptime. Implemented Infrastructure as Code using Terraform and Ansible, enabling rapid deployment and disaster recovery capabilities.",
+      "link": "",
+      "technologies": ["AWS", "Terraform", "Ansible", "Kubernetes", "CI/CD"]
     },
     {
         "name": "Cloud Cost Optimization",
-        "description": "Delivered $120K+ annual infrastructure cost savings through automated resource management",
+        "description": "Led initiative to optimize cloud spending, implementing auto-scaling, resource tagging, and cost monitoring. Achieved 35% reduction in monthly cloud costs while maintaining performance.",
         "technologies": ["AWS Cost Management", "Auto-scaling", "Monitoring", "Terraform", "Cloud Custodian"]
     },
     {
-      "name": "Compliance Expertise",
-      "description": "Maintained SOX and regulatory compliance in Fortune 500 financial services environment",
-      "technologies": ["SOX", "Regulatory Compliance", "ITSM", "ServiceNow", "ITIL", "IT Governance", "IT Risk Management", "IT Audit", "IT Security", "IT Compliance"]
-    },
-    {
-      "name": "Knowledge Sharing",
-      "description": "Served as Kubernetes instructor, fostering team development and best practices adoption",
-      "link": "",
-      "technologies": ["AWS", "Terraform", "Ansible", "Kubernetes", "CI/CD"]
-    }
+      "name": "Personal Website",
+      "description": "Developed a personal website using HTML, CSS, and JavaScript to showcase my skills and projects. The website is hosted AWS S3 and CloudFront. Integrated with K3s and Raspberry Pi. https://www.gricascloud.com",
+      "technologies": ["HTML", "CSS", "JavaScript", "GitHub Pages", "K3s", "Raspberry Pi"]
+  }
   ],
   "styling": {
     "theme": "dark",
