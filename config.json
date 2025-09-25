@@ -39,7 +39,7 @@
       "title": "Senior Site Reliability Engineer",
       "company": "Collabera Inc | Bank of America",
       "start_date": "January 2025",
-      "end_date": "Present",
+      "end_date": "June 2026",
       "achievements": [
         "Oversaw enterprise incident lifecycle in a regulated financial environment, sustaining 99.9% SLA compliance across 100+ OpenShift clusters and 2,000+ UNIX systems.",
         "Conducted vulnerability assessments and coordinated remediation, closing 1,200+ findings in six months and reducing security exposure by 40%.",
@@ -109,7 +109,7 @@
     },
     {
         "degree": "AWS Solutions Architect Associate 9YX1DXDDCEFEQMC9",
-        "institution": "AWS Training",
+        "institution": "AWS Cloud Engineering",
         "graduation_year": "2020"
     },
     {
