@@ -53,10 +53,8 @@
       "start_date": "January 2025",
       "end_date": "August 2025",
       "achievements": [
-        "Oversaw enterprise incident lifecycle in a regulated financial environment, sustaining 99.9% SLA compliance across 100+ OpenShift clusters and 2,000+ UNIX systems.",
+        "Oversaw enterprise incident lifecycle in a regulated financial environment, sustaining 99.9% SLA compliance across 100+ OpenShift clusters",
         "Conducted vulnerability assessments and coordinated remediation, closing 1,200+ findings in six months and reducing security exposure by 40%.",
-        "Architected automated incident response workflows with ServiceNow ITSM, decreasing MTTR from 4 hours to 90 minutes and saving ~1,000 engineering hours annually.",
-        "Supported mission-critical trading and banking applications processing $50M+ daily transactions with zero missed cutoffs during tenure.",
         "Collaborated with Security, Network, and Development teams, contributing to 3 successful SOX audits with no major findings."
       ]
     },
@@ -67,7 +65,6 @@
       "end_date": "December 2024",
       "achievements": [
         "Led Site Reliability Engineering for the Observability platform, managing Mimir and OpenTelemetry API endpoints to ensure scalable metrics ingestion and reliable time-series storage supporting millions of active series.",
-        "Automated multi-region AWS deployments with Harness.io and Terraform, cutting provisioning times from 4 hours to 30 minutes.",
         "Deployed GPU compute automation with Ansible for CUDA drivers and Slurm scheduling, reducing GPU job queue times by 60%.",
         "Implemented SAST/DAST  in GitLab pipelines, detecting 300+ vulnerable dependencies and reducing remediation time from 3 weeks to 5 days.",
         "Optimized Kubernetes workloads, lowering AWS spend by 25% (~$750K annually) while maintaining SLAs.",
